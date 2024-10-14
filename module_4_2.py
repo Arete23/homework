@@ -4,6 +4,6 @@ def test_function():
 
     inner_function()
 
-# inner_function() # ошбика, т.к. невозможо доставать значения внутри функции (извне)
+# inner_function() # ошибка, т.к. невозможо доставать значения внутри функции (извне)
 
 test_function()
