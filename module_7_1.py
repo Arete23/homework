@@ -1,3 +1,13 @@
+class Product:
+    def __init__(self, name, weight, category):
+        self.name = name
+        self.weight = weight
+        self.category = category
+
+    def __str__(self):
+        return f'{self.name}, {self.weight}, {self.category}'
+
+    
 class Shop:
     def __init__(self,__file_name = 'products.txt'):
         self.__file_name = __file_name
@@ -16,16 +26,6 @@ class Shop:
             else:
                 print(f'Продукт {str(p)} уже есть в магазине')
         file.close()
-
-
-class Product:
-    def __init__(self, name, weight, category):
-        self.name = name
-        self.weight = weight
-        self.category = category
-
-    def __str__(self):
-        return f'{self.name}, {self.weight}, {self.category}'
 
 
 s1 = Shop()
