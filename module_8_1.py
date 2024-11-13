@@ -8,6 +8,7 @@ def add_everything_up(a, b):
 
         else:
             raise TypeError
+        
     except TypeError:
         return f'{str(a)}{str(b)}'
 
