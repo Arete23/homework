@@ -8,8 +8,6 @@ def is_prime(func):
                     break
             else:
                 print("Простое")
-        else:
-            print("Составное")
         return result
     return wrapper
 
