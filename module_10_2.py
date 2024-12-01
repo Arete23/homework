@@ -20,14 +20,10 @@ class Knight(threading.Thread):
         print(f"{self.name} одержал победу спустя {self.days} дней(дня)!")
 
 
-if __name__ == "__main__":
-    first_knight = Knight("Sir Lancelot", 10)
-    second_knight = Knight("Sir Galahad", 20)
-
-    first_knight.start()
-    second_knight .start()
-
-    first_knight.join()
-    second_knight .join()
-
+first_knight = Knight("Sir Lancelot", 10)
+second_knight = Knight("Sir Galahad", 20)
+first_knight.start()
+second_knight .start()
+first_knight.join()
+second_knight .join()
 print("Все битвы закончились!")
