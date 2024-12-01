@@ -1,7 +1,7 @@
-import threading
-import time
+from threading import Thread
+from time import sleep
 
-class Knight(threading.Thread):
+class Knight(Thread):
     def __init__(self, name, power):
         super().__init__()
         self.name = name
@@ -16,7 +16,7 @@ class Knight(threading.Thread):
             daily_defense = min(self.power, self.enemies)
             self.enemies -= daily_defense
             print(f"{self.name}, сражается {self.days} день(дня)..., осталось {self.enemies} воинов.")
-            time.sleep(1)
+            sleep(1)
         print(f"{self.name} одержал победу спустя {self.days} дней(дня)!")
 
 
